@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(9, 12, 20);
+}
+
+#container {
+    /* border: 2px solid rgb(29,45,69); */
+    border-radius: 5px;
+    height: 450px;
+    width: 610px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 1px;
+    gap: 4px;
+}
+
+.hobbies, .aspiration {
+    border: 2px solid rgb(95,136,173);
+    border-radius: 4px;
+    position: relative;
+}
+
+                /* -------PROFILE-------- */
+#profile {
+    border: 2px solid rgb(95, 136, 173);
+    grid-column: 1 / -1;
+    position: relative;
+
+}
+
+#about-me {
+    color: rgb(218, 213, 213);
+    font-family: sans-serif;
+    margin-top: 60px;
+    margin-left: 300px;
+    position: absolute;
+}
+
+img {
+    /* background-color: blue; */
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+                /* ------PROFILE END------ */
+
+                /* ----HOBBIES----- */
+
+.hobbies {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+#hobby-head, #aspiration-head {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-size: larger;
+    margin-top: 15px;
+    margin-left: 95px;
+    position: absolute;
+}
+
+#hobby-1 {
+    font-family: sans-serif;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#hobby-2 {
+    font-family: sans-serif;
+    margin-top: 90px;
+    position: absolute;
+}
+
+                    /* ----HOBBIES END---- */
+
+                    /* -----APSIRATION------ */
+
+.aspiration {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+#aspire {
+    margin-top: 50px;
+    position: absolute;
+    width: 400px;
+}
+
+                        /* ------ASPIRATION END------- */
+
+@media screen and (max-width: 720px) {
+    #container {
+        width: 500px;
+        grid-template-columns: 1fr;
+    }
+
+    #about-me {
+        color: rgb(218, 213, 213);
+        font-family: sans-serif;
+        margin-top: 20px;
+        margin-left: 200px;
+        position: absolute;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    #hobby-head, #aspiration-head {
+        margin-left: 170px;
+    }
+
+    #hobby-1, #hobby-2 {
+        margin-left: 120px;
+    }
+
+    #aspire {
+        left: 40px;
+    }
+}
